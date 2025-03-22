@@ -4,17 +4,6 @@ This project integrates sensors connected to an ESP32 with a data management pla
 
 > **Note:** By default, the repository uses the Revit floorplan **racbasicsampleproject.rvt**, an Autodesk sample available [here](https://help.autodesk.com/view/RVT/2024/ENU/?guid=GUID-61EF2F22-3A1F-4317-B925-1E85F138BE88).
 
-## Table of Contents
-
-- Introduction
-- Features
-- Prerequisites
-- Deployment
-- Automated Configuration
-- Endpoints and Integration
-- Data Generation Example
-- Notes
-- Contact
 
 ## Introduction
 
@@ -103,6 +92,7 @@ Node.js endpoints receive and provide data for visualization and interaction wit
 
 `gera_data.py` is a sample script that sends the following JSON to the API:
 
+```json
 {
   "temp": 21,
   "umidade": 498.7,
@@ -110,6 +100,7 @@ Node.js endpoints receive and provide data for visualization and interaction wit
   "ruido": 10.0,
   "time": 1742656891
 }
+```
 
 Adapt this format for real sensor data in production environments.
 
