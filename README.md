@@ -1,4 +1,3 @@
-
 # RevitSense: Real-Time IoT Data Visualization
 
 This project integrates sensors connected to an ESP32 with a data management platform for real-time visualization. Inspired and adapted from [João Martins' tutorial](https://joaomartins-callmejohn.github.io/iot-sample-tutorial/), the application displays an interactive heatmap over a house floorplan (developed in Revit), with sensor data updating the visualization in real time.
@@ -46,37 +45,47 @@ This project provides a complete solution that:
 
 2. Download the application:
 
-   git clone https://github.com/Aldrumont/revitsense
-   cd revitsense
-   sudo apt install -y unzip
-   unzip aps-iot-extensions-demo.zip
-   cd aps-iot-extensions-demo-master
+```bash
+git clone https://github.com/Aldrumont/revitsense
+cd revitsense
+sudo apt install -y unzip
+unzip aps-iot-extensions-demo.zip
+cd aps-iot-extensions-demo-master
+```
 
 3. Run the pre-configuration script:
 
-   python3 pre_config.py
-
-   Enter your CLIENT_ID and CLIENT_SECRET when prompted.
+```bash
+python3 pre_config.py
+```
+Enter your CLIENT_ID and CLIENT_SECRET when prompted.
 
 4. Start Docker containers:
 
-   docker compose up -d --build && sleep 10
+```bash
+docker compose up -d --build && sleep 10
+```
 
-5. Select the place of you sensor:
+5. Select the place of your sensor:
 
-   Follow [Joao Martins Example](https://joaomartins-callmejohn.github.io/iot-sample-tutorial/adapting/home/#ajustando-os-sensores)
+Follow [Joao Martins Example](https://joaomartins-callmejohn.github.io/iot-sample-tutorial/adapting/home/#ajustando-os-sensores)
 
-4. Restart Docker containers:
+6. Restart Docker containers:
 
-   docker compose down && docker compose up -d --build && sleep 10
+```bash
+docker compose down && docker compose up -d --build && sleep 10
+```
 
-6. Initialize the database:
+7. Initialize the database:
 
-   docker exec aps-iot-extensions-demo-master-app-1 python3 init_sensor_db.py && sleep 5
+```bash
+docker exec aps-iot-extensions-demo-master-app-1 python3 init_sensor_db.py && sleep 5
+```
+To populate with example data:
 
-   To populate with example data:
-
-   docker exec aps-iot-extensions-demo-master-app-1 python3 post_example_data.py
+```bash
+docker exec aps-iot-extensions-demo-master-app-1 python3 post_example_data.py
+```
 
 ## Automated Configuration
 
