@@ -7,7 +7,9 @@ This project integrates sensors connected to an ESP32 with a data management pla
 
 ## Introduction
 
-![APS GIF](aps.gif)
+<div align="center">
+  <img src="aps.gif" alt="APS GIF">
+</div>
 
 This project provides a complete solution that:
 
