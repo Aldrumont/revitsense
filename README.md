@@ -7,6 +7,8 @@ This project integrates sensors connected to an ESP32 with a data management pla
 
 ## Introduction
 
+![APS GIF](aps.gif)
+
 This project provides a complete solution that:
 
 - Uses 4 sensors connected to an ESP32.
